@@ -39,7 +39,7 @@ def Process(file):
       b2 = Hex(ba[new])
       old = new
       
-      if (b1 < 127) and (b2 < 127):
+      if (b1 < 256) and (b2 < 256):
         matrix[b1][b2] = 'x'
       out.write(str(b1) + ',' + str(b2) + '\n')
 
